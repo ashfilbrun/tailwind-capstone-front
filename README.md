@@ -8,3 +8,12 @@ This full-stack application was created by Ashlan Filbrun using the MERN stack a
 
 <a href='https://github.com/ashfilbrun'>GitHub</a>
 <a href='https://www.linkedin.com/in/ashlanfilbrun/'>LinkedIn</a>
+
+## Technologies Used
+- <a href="https://www.figma.com/file/neUEC1MHPWGrLjGbDu3lUA/Capstone?type=design&node-id=1-2&mode=design&t=BnnstIrGcSoY36yz-0">Figma</a>
+- <a href="https://trello.com/b/JjzzFnez/capstone">Trello</a>
+- <a href="https://drive.google.com/file/d/1GqOy4f4zyFalv1zMB8jyjPR5BirPS7Qg/view?usp=sharing">ERD from copy.io</a>
+- <a href="https://drive.google.com/file/d/1vizlZegN56fMt6UpfcvZgJ28B-BJm4FW/view">CHD from copy.io</a>
+
+## Attributes
+- 
