@@ -6,7 +6,7 @@ import MyCalendar from "./MyCalendar";
 import Profile from "./Profile";
 import DailySurvey from "./DailySurvey";
 import Context from "../Context";
-// import CreateSymptom from "./CreateSymptom";
+import CreateSymptom from "./CreateSymptom";
 
 export default function Main() {
   const [user, setUser] = useState("");
@@ -29,7 +29,7 @@ export default function Main() {
           <Route path="/MyCalendar" element={<MyCalendar />} />
           <Route path="/Profile/:id" element={<Profile />} />
           <Route path="/DailySurvey/:id" element={<DailySurvey />} />
-          {/* <Route path='/CreateSymptom' element={<CreateSymptom />} /> */}
+          <Route path='/CreateSymptom' element={<CreateSymptom />} />
         </Routes>
       </>
     );

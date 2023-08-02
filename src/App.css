@@ -38,6 +38,7 @@ h1 {
   border-radius: 60px;
   box-shadow: inset;
   background-color: rgba(173, 221, 221, 0.75);
+  margin-top: 2px
 }
 
 .App-logo {

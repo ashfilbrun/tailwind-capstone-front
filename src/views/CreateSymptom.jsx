@@ -23,8 +23,8 @@
 
 export default function CreateSymptom() {
   return (
-    <ul className="divide-y divide-gray-200">
-     <h1>Coming Soon...</h1>
+    <ul className="divide-y divide-gray-200 text-black">
+     <h1 className="text-black">Coming Soon...</h1>
     </ul>
   )
 }

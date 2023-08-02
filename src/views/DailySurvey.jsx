@@ -35,7 +35,7 @@ export default function DailySurvey(props) {
                 Symptoms: {symptom.name} 
               </h1>
               <h2 className="flex flex-col align-center justify-center text-center">
-                Rating: <input className="max-w-[400px] align-center justify-center m-auto"></input>
+                Rating: <input className="max-w-[400px] align-center justify-center m-auto text-black pl-2"></input>
               </h2>
               <button className="flex flex-col align-center justify-center bg-stone-950 text-white p-2 m-4 rounded ring-1 ring-lime-200 m-auto mt-5">Submit</button>
               </>
