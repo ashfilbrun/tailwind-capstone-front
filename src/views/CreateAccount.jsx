@@ -51,7 +51,7 @@ export default function CreateAccount() {
     };
     getIllnesses();
     console.log(illnesses);
-  }, []);
+  }, [])
 
   const handleChange = (e) => {
     setFormState({ ...formState, [e.target.id]: e.target.value });
@@ -171,5 +171,5 @@ export default function CreateAccount() {
         </div>
       </div>
     </div>
-  ) : null;
+  ) :null;
 }

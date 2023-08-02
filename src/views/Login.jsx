@@ -64,16 +64,16 @@ export default function Login() {
       >
         <h2 className="p-3 text-3xl">Login</h2>
         <form className="login">
-          <label className="p-5"htmlFor="username">USERNAME: </label>
+          <label className="p-5" htmlFor="username">USERNAME: </label>
           <input
             type="text"
             placeholder="Enter username here"
             id="username"
             onChange={handleChange}
             value={formState.username}
-            className="bg-whitem text-black rounded px-4 py-2 mt-2"
+            className="bg-white text-black rounded px-4 py-2 mt-2"
           />
-          <label className="p-5"htmlFor="password">PASSWORD: </label>
+          <label className="p-5" htmlFor="password">PASSWORD: </label>
           <input
             type="password"
             placeholder="Enter password here"
@@ -89,21 +89,21 @@ export default function Login() {
             Username or password is incorrect. Please try again!
           </p>
           {/* <button type="reset" className="submit" id="resetBtn">forgot password ?</button> */}
+          <div className="flex flex-row align-center justify-center">
+            <button
+              type="submit"
+              className="bg-stone-950 text-white p-2 m-4 rounded min-w-50 ring-1 ring-lime-200"
+            >
+              Log In
+            </button>
+            <button
+              className="bg-stone-950 text-white p-2 m-4 rounded ring-1 ring-lime-200"
+              onClick={create}
+            >
+              &nbsp;Create An Account
+            </button>
+          </div>
         </form>
-        <div className="flex flex-row align-center justify-center">
-          <button
-            type="submit"
-            className="bg-stone-950 text-white p-2 m-4 rounded min-w-50 ring-1 ring-lime-200"
-          >
-            Log In
-          </button>
-          <button
-            className="bg-stone-950 text-white p-2 m-4 rounded ring-1 ring-lime-200"
-            onClick={create}
-          >
-            &nbsp;Create An Account
-          </button>
-        </div>
       </div>
       <div className="lineBreak"></div>
     </div>

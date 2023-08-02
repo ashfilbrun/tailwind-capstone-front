@@ -7,5 +7,4 @@ This full-stack application was created by Ashlan Filbrun using the MERN stack a
 # Check it out here: <a href=''>Chronically</a>
 
 <a href='https://github.com/ashfilbrun'>GitHub</a>
-        </p>
-        <p><a href='https://www.linkedin.com/in/ashlanfilbrun/'>&nbsp;&
+<a href='https://www.linkedin.com/in/ashlanfilbrun/'>LinkedIn</a>

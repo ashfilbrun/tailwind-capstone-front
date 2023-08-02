@@ -5,7 +5,7 @@ import Context from "../Context";
 export default function DailySurvey(props) {
   const { surveys, illness, symptoms } = props;
 
-  const { userInfo } = useContext(Context);
+  // const { userInfo } = useContext(Context);
 
   // const [score, setScore] = useState("");
 
