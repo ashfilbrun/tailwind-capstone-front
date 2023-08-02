@@ -22,6 +22,13 @@ This full-stack application was created by Ashlan Filbrun using the MERN stack a
 - When implementing tailwindCSS I had to start a new repo so here's the <a href="https://github.com/ashfilbrun/capstone-frontend">original front-end repo</a>
 - <a href="https://github.com/ashfilbrun/capstone-backend">Capstone Back-end</a>
 
+## Future Additions 
+- forum for users to ask each other questions and share advice/tips
+- add scoring for symptoms that changes calendar day color in order to visually track your symptoms
+- complete mobile functionality
+- deploy back-end
+- deploy front-end
+
 ## Connect with me!
 - <a href='https://github.com/ashfilbrun'>GitHub</a>
 - <a href='https://www.linkedin.com/in/ashlanfilbrun/'>LinkedIn</a>
