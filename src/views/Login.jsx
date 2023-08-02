@@ -63,7 +63,7 @@ export default function Login() {
         onSubmit={handleSubmit}
       >
         <h2 className="p-3 text-3xl">Login</h2>
-        <form className="login">
+        <form className="flex flex-col p-5 max-h-full justify-center align-center">
           <label className="p-5" htmlFor="username">USERNAME: </label>
           <input
             type="text"
@@ -71,7 +71,7 @@ export default function Login() {
             id="username"
             onChange={handleChange}
             value={formState.username}
-            className="bg-stone-100 text-black rounded px-4 py-2 mt-2"
+            className="flex flex-col align-center justify-center bg-stone-100 text-black rounded px-4 py-2 mt-2"
           />
           <label className="p-5" htmlFor="password">PASSWORD: </label>
           <input
@@ -80,7 +80,7 @@ export default function Login() {
             id="password"
             onChange={handleChange}
             value={formState.password}
-            className="bg-stone-100 text-black rounded px-4 py-2 m-2"
+            className="bg-stone-100 text-black rounded px-4 py-2 mt-2"
           />
           <p
             className="text-3l text-red-600 font-bold underline p-5 mt-2"
@@ -89,7 +89,7 @@ export default function Login() {
             Username or password is incorrect. Please try again!
           </p>
           {/* <button type="reset" className="submit" id="resetBtn">forgot password ?</button> */}
-          <div className="flex flex-row align-center justify-center">
+          <div className="flex flex-col align-center justify-center">
             <button
               type="submit"
               className="bg-stone-950 text-white p-2 m-4 rounded min-w-50 ring-1 ring-lime-200"

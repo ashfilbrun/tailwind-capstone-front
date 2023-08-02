@@ -94,7 +94,7 @@ export default function Profile() {
           form below and clicking the "Update Profile" button.
         </h5>
         <form className="flex flex-col">
-          <label htmlFor="firstName">UPDATE FIRST NAME:</label>
+          <label className="p-5" htmlFor="firstName">UPDATE FIRST NAME:</label>
           <input
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-1"
             type="text"
@@ -103,7 +103,7 @@ export default function Profile() {
             onChange={handleChange}
             defaultValue={user.firstName}
           />
-          <label htmlFor="lastName">UPDATE LAST NAME:</label>
+          <label className="p-5" htmlFor="lastName">UPDATE LAST NAME:</label>
           <input
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-1"
             type="text"
@@ -112,7 +112,7 @@ export default function Profile() {
             onChange={handleChange}
             defaultValue={user.lastName}
           />
-          <label htmlFor="email">UPDATE EMAIL ADDRESS:</label>
+          <label className="p-5" htmlFor="email">UPDATE EMAIL ADDRESS:</label>
           <input
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-1"
             type="email"
@@ -121,7 +121,7 @@ export default function Profile() {
             onChange={handleChange}
             defaultValue={user.email}
           />
-          <label htmlFor="userName">UPDATE USERNAME:</label>
+          <label className="p-5" htmlFor="userName">UPDATE USERNAME:</label>
           <input
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-1"
             type="text"
@@ -130,7 +130,7 @@ export default function Profile() {
             onChange={handleChange}
             defaultValue={user.username}
           />
-          <label htmlFor="password">UPDATE PASSWORD:</label>
+          <label className="p-5" htmlFor="password">UPDATE PASSWORD:</label>
           <input
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-1"
             type="password"
@@ -139,7 +139,7 @@ export default function Profile() {
             onChange={handleChange}
             defaultValue={user.password}
           />
-          <label htmlFor="passwordValid">CONFIRM NEW PASSWORD:</label>
+          <label className="p-5" htmlFor="passwordValid">CONFIRM NEW PASSWORD:</label>
           <input
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-1"
             type="password"
@@ -147,7 +147,7 @@ export default function Profile() {
             onChange={handleChange}
             defaultValue={user.passwordValid}
           />
-          <label htmlFor="illness">UPDATE ILLNESS:</label>
+          <label className="p-5" htmlFor="illness">UPDATE ILLNESS:</label>
           <select
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-2"
             placeholder={user.illness}

@@ -18,8 +18,8 @@ export default function Header() {
     return (
       <div className="header">
         <div>
-          <header>
-            <h1>Chronic/ally</h1>
+          <header className="flex justify-center mt-2 text-[52px] font-bold">
+          <img src="capstone.png" alt="Chronic/ally"/>
           </header>
           <Nav />
         </div>
