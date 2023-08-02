@@ -9,8 +9,8 @@ export default function Header() {
   if (userInfo.username === "") {
     return (
       <div>
-        <header className="flex justify-center p-5 mt-10 text-3xl">
-          <h1>Chronic/ally</h1>
+        <header className="flex justify-center mt-2 text-[52px] font-bold">
+          <img src="capstone.png" alt="Chronic/ally"/>
         </header>
       </div>
     );

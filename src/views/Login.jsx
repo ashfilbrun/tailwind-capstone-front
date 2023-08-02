@@ -71,7 +71,7 @@ export default function Login() {
             id="username"
             onChange={handleChange}
             value={formState.username}
-            className="bg-white text-black rounded px-4 py-2 mt-2"
+            className="bg-stone-100 text-black rounded px-4 py-2 mt-2"
           />
           <label className="p-5" htmlFor="password">PASSWORD: </label>
           <input
@@ -80,7 +80,7 @@ export default function Login() {
             id="password"
             onChange={handleChange}
             value={formState.password}
-            className="bg-white text-black rounded px-4 py-2 m-2"
+            className="bg-stone-100 text-black rounded px-4 py-2 m-2"
           />
           <p
             className="text-3l text-red-600 font-bold underline p-5 mt-2"

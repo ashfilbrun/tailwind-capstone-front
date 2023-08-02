@@ -1,3 +1,10 @@
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
 .App {
   text-align: center;
 }

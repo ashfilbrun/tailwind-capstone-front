@@ -28,18 +28,18 @@ export default function Nav() {
         </li>
         <li>
           <Link
-            to={`/Profile/${userId}`}
-            className="text-white hover:text-teal-600"
-          >
-            Profile
-          </Link>
-        </li>
-        <li>
-          <Link
             to={`/CreateSymptom`}
             className="text-white hover:text-teal-600"
           >
             Create Symptom
+          </Link>
+        </li>
+        <li>
+          <Link
+            to={`/Profile/${userId}`}
+            className="text-white hover:text-teal-600"
+          >
+            Profile
           </Link>
         </li>
       </ul>
