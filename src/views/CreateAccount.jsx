@@ -33,11 +33,21 @@ export default function CreateAccount() {
       password: formState.password,
       sex: formState.sex,
       birthDate: formState.birthDate,
-      illnessId: null,
-      googleId: null,
     };
-    await axios.post(`${BASE_URL}user/create`, newUser);
-    navigate("/");
+
+    try {
+      const result = await axios.post(`${BASE_URL}user/create`, newUser);
+
+      console.log(
+        "🚀 ~ file: CreateAccount.jsx:41 ~ handleSubmit ~ result:",
+        result
+      );
+      if (result.status === 200 || result.status === 201) {
+        navigate("/");
+      }
+    } catch (error) {
+      alert(`${error.response.data.message}`);
+    }
   };
 
   useEffect(() => {
@@ -51,7 +61,7 @@ export default function CreateAccount() {
     };
     getIllnesses();
     console.log(illnesses);
-  }, [])
+  }, []);
 
   const handleChange = (e) => {
     setFormState({ ...formState, [e.target.id]: e.target.value });
@@ -67,11 +77,21 @@ export default function CreateAccount() {
   };
 
   return illnesses ? (
-    <div className="bg-lime-200 text-white text-center p-4 rounded m-8 text-body shadow-xl" id="createAccountContainer">
-      <div className="bg-teal-900 text-white p-4 rounded max-h-full" id="createAccountForm" onSubmit={handleSubmit}>
-        <h2 className="p-3 text-3xl">Enter information below to create an account:</h2>
+    <div
+      className="bg-lime-200 text-white text-center p-4 rounded m-8 text-body shadow-xl"
+      id="createAccountContainer"
+    >
+      <div
+        className="bg-teal-900 text-white p-4 rounded max-h-full"
+        id="createAccountForm"
+      >
+        <h2 className="p-3 text-3xl">
+          Enter information below to create an account:
+        </h2>
         <form className="flex flex-col text-center">
-          <label className="p-5" htmlFor="firstName">FIRST NAME: </label>
+          <label className="p-5" htmlFor="firstName">
+            FIRST NAME:{" "}
+          </label>
           <input
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-1"
             type="text"
@@ -80,7 +100,9 @@ export default function CreateAccount() {
             onChange={handleChange}
             value={formState.firstName}
           ></input>
-          <label className="p-5" htmlFor="lastName">LAST NAME: </label>
+          <label className="p-5" htmlFor="lastName">
+            LAST NAME:{" "}
+          </label>
           <input
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-1"
             type="text"
@@ -89,7 +111,9 @@ export default function CreateAccount() {
             onChange={handleChange}
             value={formState.lastName}
           ></input>
-          <label className="p-5" htmlFor="birthDate">BIRTH DATE: </label>
+          <label className="p-5" htmlFor="birthDate">
+            BIRTH DATE:{" "}
+          </label>
           <input
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-1"
             type="date"
@@ -98,15 +122,24 @@ export default function CreateAccount() {
             onChange={handleChange}
             value={formState.birthDate}
           ></input>
-          <label className="p-5" htmlFor="sex">SEX: </label>
-          <select className="ml-5 mr-5 shadow-l text-black pl-2 pt-2" name="sex" id="sex" onChange={handleChange}>
+          <label className="p-5" htmlFor="sex">
+            SEX:{" "}
+          </label>
+          <select
+            className="ml-5 mr-5 shadow-l text-black pl-2 pt-2"
+            name="sex"
+            id="sex"
+            onChange={handleChange}
+          >
             <option value="select an answer"></option>
             <option value="female">Female</option>
             <option value="male">Male</option>
             <option value="no">Prefer not to answer</option>
           </select>
-          <label className="p-5" htmlFor="illness">CHRONIC ILLNESS:</label>
-          <select 
+          <label className="p-5" htmlFor="illness">
+            CHRONIC ILLNESS:
+          </label>
+          <select
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-2"
             placeholder="select"
             name="illness"
@@ -119,7 +152,9 @@ export default function CreateAccount() {
               // <option value="other">other</option>
             ))}
           </select>
-          <label className="p-5" htmlFor="username">CREATE USERNAME: </label>
+          <label className="p-5" htmlFor="username">
+            CREATE USERNAME:{" "}
+          </label>
           <input
             className="ml-5 mr-5 text-black pl-2 pt-1"
             type="text"
@@ -128,7 +163,9 @@ export default function CreateAccount() {
             onChange={handleChange}
             value={formState.username}
           ></input>
-          <label className="p-5" htmlFor="email">EMAIL ADDRESS:</label>
+          <label className="p-5" htmlFor="email">
+            EMAIL ADDRESS:
+          </label>
           <input
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-1"
             type="email"
@@ -137,7 +174,9 @@ export default function CreateAccount() {
             onChange={handleChange}
             value={formState.email}
           ></input>
-          <label className="p-5" htmlFor="password">CREATE PASSWORD:</label>
+          <label className="p-5" htmlFor="password">
+            CREATE PASSWORD:
+          </label>
           <input
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-1"
             type="password"
@@ -146,7 +185,9 @@ export default function CreateAccount() {
             onChange={handleChange}
             value={formState.password}
           ></input>
-          <label className="p-5" htmlFor="passwordValid">CONFIRM PASSWORD:</label>
+          <label className="p-5" htmlFor="passwordValid">
+            CONFIRM PASSWORD:
+          </label>
           <input
             className="ml-5 mr-5 shadow-l text-black pl-2 pt-1"
             type="password"
@@ -157,7 +198,11 @@ export default function CreateAccount() {
           ></input>
         </form>
         <div className="flex justify-center flex-col p-5">
-          <button type="submit" className="bg-stone-950 text-white p-2 m-4 rounded ring-1 ring-lime-200 shadow-l">
+          <button
+            type="submit"
+            className="bg-stone-950 text-white p-2 m-4 rounded ring-1 ring-lime-200 shadow-l"
+            onClick={handleSubmit}
+          >
             Create New Account
           </button>
           <button
@@ -171,5 +216,5 @@ export default function CreateAccount() {
         </div>
       </div>
     </div>
-  ) :null;
+  ) : null;
 }

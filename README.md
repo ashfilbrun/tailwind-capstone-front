@@ -14,6 +14,7 @@ This full-stack application was created by Ashlan Filbrun using the MERN stack a
 - <a href="https://trello.com/b/JjzzFnez/capstone">Trello</a>
 - <a href="https://drive.google.com/file/d/1GqOy4f4zyFalv1zMB8jyjPR5BirPS7Qg/view?usp=sharing">ERD from copy.io</a>
 - <a href="https://drive.google.com/file/d/1vizlZegN56fMt6UpfcvZgJ28B-BJm4FW/view">CHD from copy.io</a>
+- <a href="https://www.canva.com/design/DAFp5Yktj7c/V0yuMxxvn71274M6sjm47A/edit">Logo from Canva</a>
 - <a href="">Railway</a>
 
 ## Credits
