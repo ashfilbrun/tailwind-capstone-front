@@ -71,7 +71,7 @@ export default function Login() {
             id="username"
             onChange={handleChange}
             value={formState.username}
-            className="flex flex-col align-center justify-center bg-stone-100 text-black rounded px-4 py-2 mt-2"
+            className="flex flex-col self-center justify-center bg-stone-100 text-black rounded px-4 py-2 mt-2 min-w-250"
           />
           <label className="p-5" htmlFor="password">PASSWORD: </label>
           <input
@@ -80,7 +80,7 @@ export default function Login() {
             id="password"
             onChange={handleChange}
             value={formState.password}
-            className="bg-stone-100 text-black rounded px-4 py-2 mt-2 max-w-md items-center"
+            className="bg-stone-100 text-black rounded px-4 py-2 mt-2 self-center min-w-250"
           />
           <p
             className="text-3l text-red-600 font-bold underline p-5 mt-2"
