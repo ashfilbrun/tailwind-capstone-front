@@ -80,7 +80,7 @@ export default function Login() {
             id="password"
             onChange={handleChange}
             value={formState.password}
-            className="bg-stone-100 text-black rounded px-4 py-2 mt-2"
+            className="bg-stone-100 text-black rounded px-4 py-2 mt-2 max-w-md items-center"
           />
           <p
             className="text-3l text-red-600 font-bold underline p-5 mt-2"
